@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+	    <name>Use the correct shift keys.</name>
+	    <identifier>private.correct_shift_keys</identifier>
+
+	    <autogen>--KeyToKey-- KeyCode::Q, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::W, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::E, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::R, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::T, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::A, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::S, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::D, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::F, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::G, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::Z, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::X, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::C, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::V, ModifierFlag::SHIFT_L, KeyCode::VK_NONE</autogen>
+
+	    <autogen>--KeyToKey-- KeyCode::Y,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::U,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::I,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::O,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::P,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::H,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::J,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::K,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::L,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::SEMICOLON, ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::N,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::M,         ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::COMMA,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::DOT,       ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	    <autogen>--KeyToKey-- KeyCode::QUOTE,     ModifierFlag::SHIFT_R, KeyCode::VK_NONE</autogen>
+	</item>
+	<item>
+		<name>F19 to F19</name>
+		<appendix>(F19 to ctrl + F19 Only, send escape)</appendix>
+		<identifier>private.f192f19_escape</identifier>
+		<autogen>
+			--KeyOverlaidModifier--
+			KeyCode::F19,
+			KeyCode::CONTROL_L,
+			KeyCode::ESCAPE
+		</autogen>
+	</item>
+	<item>
+		<name>Forward delete and option</name>
+		<appendix>(Forward Delete to Option + Forward Delete Only, send Forward Delete)</appendix>
+		<identifier>private.fd2option_fd</identifier>
+		<autogen>
+			--KeyOverlaidModifier--
+			KeyCode::FORWARD_DELETE,
+			KeyCode::OPTION_L,
+			KeyCode::FORWARD_DELETE
+		</autogen>
+	</item>
+	
+	<item>
+		<name>F19 to F19</name>
+		<appendix>(F19 to Hyper (ctrl+shift+cmd+opt) + F19 Only, send escape)</appendix>
+		<identifier>private.f192f19_escape_hyperkey</identifier>
+		<autogen>
+			--KeyOverlaidModifier--
+			KeyCode::F19,
+			KeyCode::COMMAND_L,
+			ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,
+			KeyCode::ESCAPE
+		</autogen>
+	</item>
+	<item>
+		<name>End to CTRL+OPTION</name>
+		<identifier>private.end_to_ctrlopt</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::END,
+			KeyCode::CONTROL_L, ModifierFlag::OPTION_L
+		</autogen>
+	</item>
+	<item>
+		<name>HOME to CMD+OPTION</name>
+		<identifier>private.end_to_cmdopt</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::HOME,
+			KeyCode::COMMAND_L, ModifierFlag::OPTION_L
+		</autogen>
+	</item>
+</root>
+
